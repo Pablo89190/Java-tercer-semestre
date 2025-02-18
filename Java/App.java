@@ -6,16 +6,16 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Ingrese un párrafo de texto:"); // Solicitamos al usuario el párrafo
-        String texto = scanner.nextLine();
+        String parrafo = scanner.nextLine();
 
         // Contamos las vocales y consonantes
-        int[] conteo = contarVocalesConsonantes(texto);
+        int[] conteo = contarVocalesConsonantes(parrafo);
         System.out.println("Cantidad de vocales: " + conteo[0]);
         System.out.println("Cantidad de consonantes: " + conteo[1]);
 
         System.out.println("Digite el carácter que desea buscar:");  // Solicitamos al usuario el carácter que desea buscar
         char caracter = scanner.next().charAt(0);
-        buscarCaracter(texto, caracter);
+        buscarCaracter(parrafo, caracter);
 
         scanner.close();
     }
